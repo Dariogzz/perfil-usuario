@@ -3,11 +3,13 @@ var apellido = document.getElementById("ocupacion");
 
 var esMasculino = true
 
-perfilCard.onclick = function() {
-    if (esMasculino) 
-    nombre.textcontent = "Omarcita";
-    ocupacion.textcontent = "Estudiante Universitaria y jugadora de basketball";
-} else {
-    nombre.textcontent = "Omar";
-    ocupacion.textcontent = "Estudiante Universitario y jugador de basketball";
-}
+perfilCard.addEventListener("click", function() {
+  if (esMasculino) {
+    nombre.textContent = "Omar";
+    ocupacion.textContent = "Estudiante Universitario y jugador de basketball";
+  } else {
+    nombre.textContent = "Omarcita";
+    ocupacion.textContent = "Estudiante Universitaria y jugadora de basketball";
+  }
+});
+
